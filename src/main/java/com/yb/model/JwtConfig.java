@@ -20,6 +20,8 @@ public class JwtConfig {
 
     private String expired;
 
+    //如果觉得这样麻烦,可以写一个applicaton配置文件配置默认配置,那样就不会报错了,
+    //但是让用的人知道问题是必要的
     public String getIss() {
         if(StringUtils.isNotBlank(iss)){
             return iss;

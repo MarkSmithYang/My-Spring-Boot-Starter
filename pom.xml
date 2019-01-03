@@ -9,9 +9,11 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
+    <!--其他工程引入该组件的pom依赖-->
     <groupId>com.yb</groupId>
     <artifactId>jwt-spring-boot-starter</artifactId>
     <version>1.0-REALEASE</version>
+    <!--其他工程引入该组件的pom依赖-->
 
     <packaging>jar</packaging>
     <description>Demo project for Spring Boot</description>
@@ -50,6 +52,7 @@
         </dependency>
     </dependencies>
 
+    <!--这个依赖对导致找不到主应用类(启动类)异常,需要删除或注释-->
     <!--<build>-->
         <!--<plugins>-->
             <!--<plugin>-->
